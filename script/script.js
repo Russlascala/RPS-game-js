@@ -21,7 +21,7 @@ function playGame(btn_id) {
   compPic = Math.floor(Math.random() * 3 + 1);
   console.log(compPic);
   if (compPic === 1){
-    compImg.src = "./imgs/rockc.png";
+    compImg.src = "./imgs/rockC.png";
   } else if (compPic === 2){
     compImg.src = "./imgs/paperC.png"
   } else if (compPic === 3) {
