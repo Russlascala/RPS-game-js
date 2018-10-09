@@ -30,6 +30,7 @@ function playGame(btn_id) {
     console.log("error in the computers choice");
   }
 
+  /*
   winner = document.getElementById("theWinner");
   if (btn_id === "rock" && compPic === 1){
     winner.innerHTML = "ITS A TIE!";
@@ -37,7 +38,7 @@ function playGame(btn_id) {
     winner.innerHTML = "You Lose!";
   } else if (btn_id === "rock" && compPic === 3){
     winner.innerHTML = "You Win!"
-  }
+  }*/
 
 
 }
