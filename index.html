@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>RPS Game</title>
+  <link href="https://fonts.googleapis.com/css?family=Orbitron|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" >
+
+</head>
+<body>
+  <div>
+    <h1>Rock Paper Scissors Game</h1>
+    <p id="theWinner"></p>
+  </div>
+  <div class="container">
+    <div id="player-container">
+      <h2>Player</h2>
+      <div class="img-container">
+        <img src="imgs/question.png" alt="" id="playerImg" class="image">
+      </div>
+      <div id="btn-container">
+        <a name="rock" id="rock" value="rock" class="btn" onclick="playGame(this.id)" role="button">Rock</a>
+        <a name="paper" id="paper" value="paper" class="btn" onclick="playGame(this.id)" role="button">Paper</a>
+        <a name="scissors" id="scissors" value="scissors" class="btn" onclick="playGame(this.id)" role="button">Scissors</a>
+      </div>
+    </div>
+    <div id="computer-container">
+      <h2>Computer</h2>
+      <div class="img-container">
+        <img src="imgs/question.png" alt="" id="compImg" class="image">
+        <p id="compPick"></p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    
+  </div>
+  
+  <script src="script/script.js"></script>
+</body>
+</html>
