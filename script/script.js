@@ -25,7 +25,7 @@ function playGame(btn_id) {
   } else if (compPic === 2){
     compImg.src = "./imgs/paperC.png"
   } else if (compPic === 3) {
-    compImg.src = compImgs[2];
+    compImg.src = "./imgs/scissorsC.png"
   } else{
     console.log("error in the computers choice");
   }
