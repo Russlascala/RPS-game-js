@@ -23,6 +23,12 @@ h1{
   text-align:center;
 }
 
+#theWinner{
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
 .image{
   /* display: block;
   margin:auto; */
@@ -44,7 +50,14 @@ h1{
   background-color: green;
   color: white;
   font-size:18px;
-  border-radius: 5px;  
+  border-radius: 5px; 
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */ 
 }
 
 #btn-container{
