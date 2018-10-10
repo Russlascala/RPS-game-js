@@ -16,6 +16,11 @@ body{
   
 }
 
+.score-container {
+  margin:auto;
+  width: 300px;
+}
+
 h2{
   margin-bottom:0;
 }

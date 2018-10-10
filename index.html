@@ -19,20 +19,24 @@
   </div>
   <div class="container">
     <div class="animated slideInLeft" id="player-container">
-      <h2>Player</h2>
-      Score:<span id="scorePlayer">0</span>
+      <div class="score-container">
+        <h2>Player</h2>
+        Score:<span id="scorePlayer">0</span>
+      </div>
       <div class="img-container">
         <img src="imgs/question.png" alt="" id="playerImg" class="image">
       </div>
-      <div id="btn-container">
+      <div id="btn-container" class="score-container">
         <a name="rock" id="rock" value="rock" class="btn" onclick="playGame(this.id)" role="button">Rock</a>
         <a name="paper" id="paper" value="paper" class="btn" onclick="playGame(this.id)" role="button">Paper</a>
         <a name="scissors" id="scissors" value="scissors" class="btn" onclick="playGame(this.id)" role="button">Scissors</a>
       </div>
     </div>
     <div class="animated slideInRight" id="computer-container">
-      <h2>Computer</h2>
-      Score:<span id="scoreComp">0</span>
+      <div class="score-container">
+        <h2>Computer</h2>
+        Score:<span id="scoreComp">0</span>
+      </div>
       <div class="img-container">
         <img src="imgs/question.png" alt="" id="compImg" class="image">
         <p id="compPick"></p>
