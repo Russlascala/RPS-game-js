@@ -2,7 +2,6 @@
   var playerWins = 0;
   var compWins = 0;
   var tieGames = 0;
-  
 
 function playGame(btn_id) {
 /*   var playerWins = localStorage.playerWin;
@@ -25,7 +24,6 @@ function playGame(btn_id) {
   var playerImg = document.getElementById("playerImg");
   if (btn_id === "rock"){
     playerImg.src = "./imgs/rockP.png";
-    
   } else if (btn_id === "paper"){
     playerImg.src = "./imgs/paperP.png";
     
@@ -40,9 +38,9 @@ function playGame(btn_id) {
   var compImg = document.getElementById("compImg");
   compImgs = ["../imgs/rockc.png", "../imgs/paperC.png", "../imgs/scissorsC.png"];
   compPic = Math.floor(Math.random() * 3 + 1);
-  /* console.log(compPic); */
+  console.log(compPic);
   if (compPic === 1){
-    compImg.src = "./imgs/rockC.png";
+    /* compImg.classList.add('animated','bounceIn'); */
   } else if (compPic === 2){
     compImg.src = "./imgs/paperC.png"
   } else if (compPic === 3) {
@@ -51,13 +49,15 @@ function playGame(btn_id) {
     console.log("error in the computers choice");
   }
 
+
+
  /* Decide a winner and change the score */
   winner = document.getElementById("theWinner");
   if ((btn_id === "rock" && compPic === 1) || 
   (btn_id === "paper" && compPic === 2) || 
   (btn_id === "scissors" && compPic === 3)) {
     winner.innerHTML = "ITS A TIE!";
-    tieGames++;
+    tieGames += 1;
   } else if ((btn_id === "rock" && compPic === 2) || 
   (btn_id === "paper" && compPic === 3) || 
   (btn_id === "scissors" && compPic === 1))  {
@@ -70,14 +70,14 @@ function playGame(btn_id) {
     playerWins += 1;
   }
 
+  /* changes the score on the UI */
   document.getElementById("scorePlayer").innerHTML = playerWins;
   document.getElementById("scoreComp").innerHTML = compWins;
+
 
  
 
   console.log("Tie Games: ", tieGames);
-
-
 
 }
 
